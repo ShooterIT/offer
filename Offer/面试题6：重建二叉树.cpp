@@ -15,15 +15,6 @@ struct TreeNode {
 	TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 };
 
-TreeNode* reConstructBinaryTree(vector<int> pre, vector<int> vin)
-{
-	if (!pre.size() || !vin.size()) {
-		return nullptr;
-	}
-	return reConstruct(pre, 0, pre.size() - 1,
-		vin, 0, vin.size() - 1);
-
-}
 
 //构建树的函数
 TreeNode* reConstruct(const vector<int> pre, int pre_start, int pre_end,
@@ -43,4 +34,14 @@ TreeNode* reConstruct(const vector<int> pre, int pre_start, int pre_end,
 		}
 	}
 	return root;
+}
+
+TreeNode* reConstructBinaryTree(vector<int> pre, vector<int> vin)
+{
+	if (!pre.size() || !vin.size() || pre.size() != vin.size()) {
+		return nullptr;
+	}
+	return reConstruct(pre, 0, pre.size() - 1,
+		vin, 0, vin.size() - 1);
+
 }

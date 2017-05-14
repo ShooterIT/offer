@@ -9,14 +9,15 @@
 class CMyString
 {
 public:
-	CMyString(char *pdata = nullptr);
-	CMyString(const CMyString& str);
+	CMyString(char *pch = nullptr) :pdata(pch) {}
+	CMyString(const CMyString& str) = default;
 	CMyString& operator=(const CMyString &str);
-	~CMyString(void);
+	~CMyString(void) = default;
 private:
 	char *pdata;
 };
 
+/*
 //一般写法
 CMyString & CMyString::operator=(const CMyString & str)
 {
@@ -28,6 +29,7 @@ CMyString & CMyString::operator=(const CMyString & str)
 	}
 	return *this;
 }
+*/
 
 //异常安全
 CMyString & CMyString::operator=(const CMyString & str)
