@@ -111,6 +111,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="面试题10：二进制中1的个数.cpp" />
+    <ClCompile Include="面试题11：数值的整数次方.cpp" />
+    <ClCompile Include="面试题12：打印1到最大的n位数.cpp" />
+    <ClCompile Include="面试题13：在O(1)时间删除链表节点.cpp" />
+    <ClCompile Include="面试题14：调整数组顺序使奇数位于偶数前面.cpp" />
+    <ClCompile Include="面试题15：链表中倒数第k个节点.cpp" />
+    <ClCompile Include="面试题16：反转链表.cpp" />
     <ClCompile Include="面试题1_赋值运算符函数.cpp" />
     <ClCompile Include="面试题2：实现Singleton模式.cpp" />
     <ClCompile Include="面试题3：二维数组的查找.cpp" />
