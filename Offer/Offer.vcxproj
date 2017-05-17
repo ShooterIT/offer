@@ -117,7 +117,16 @@
     <ClCompile Include="面试题14：调整数组顺序使奇数位于偶数前面.cpp" />
     <ClCompile Include="面试题15：链表中倒数第k个节点.cpp" />
     <ClCompile Include="面试题16：反转链表.cpp" />
+    <ClCompile Include="面试题17：合并两个排序的链表.cpp" />
+    <ClCompile Include="面试题18：树的子结构.cpp" />
+    <ClCompile Include="面试题19：二叉树的镜像.cpp" />
     <ClCompile Include="面试题1_赋值运算符函数.cpp" />
+    <ClCompile Include="面试题20：顺时针打印矩阵.cpp" />
+    <ClCompile Include="面试题21：包含min函数的栈.cpp" />
+    <ClCompile Include="面试题22：栈的压入、弹出序列.cpp" />
+    <ClCompile Include="面试题23：从上往下打印二叉树.cpp" />
+    <ClCompile Include="面试题24：二叉搜索树的后序遍历序列.cpp" />
+    <ClCompile Include="面试题25：二叉树中和为某一值的路径.cpp" />
     <ClCompile Include="面试题2：实现Singleton模式.cpp" />
     <ClCompile Include="面试题3：二维数组的查找.cpp" />
     <ClCompile Include="面试题4：替换空格.cpp" />

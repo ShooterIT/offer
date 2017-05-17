@@ -53,10 +53,11 @@ void print_1_to_max_n_digits(int n)
 }
 
 
-
+/*
 int main(void)
 {
 	print_1_to_max_n_digits(2);
 	getchar();
 	return 0;
 }
+*/

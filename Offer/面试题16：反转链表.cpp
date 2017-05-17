@@ -12,17 +12,12 @@ struct ListNode {
 
 ListNode* ReverseList(ListNode* pHead) 
 {
-	ListNode *head = pHead;
-	ListNode *node = pHead;
 	ListNode *pre = nullptr;
-	while (node != nullptr) {
-		ListNode *next = node->next;
-		if (next == nullptr) {
-			head = node;
-		}
-		node->next = pre;
-		pre = node;
-		node = next;
+	while (pHead != nullptr) {
+		ListNode *next = pHead->next;
+		pHead->next = pre;
+		pre = pHead;
+		pHead = next;
 	}
-	return head;
+	return pre;
 }

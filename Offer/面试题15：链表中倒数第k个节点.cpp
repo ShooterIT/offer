@@ -4,6 +4,9 @@
 *
 */
 
+#include <iostream>
+
+using namespace std;
 
 struct ListNode {
 	int val;
@@ -35,3 +38,28 @@ ListNode* FindKthToTail(ListNode* pListHead, unsigned int k)
 
 	return b;
 }
+
+//中间节点
+ListNode* find_middle(ListNode* pListHead)
+{
+	ListNode *slow = pListHead, *quick = pListHead;
+	while (quick && quick->next){
+		slow = slow->next;
+		quick = quick->next->next;
+	}
+	return slow;
+}
+
+/*
+int main(void)
+{
+	ListNode *root = new ListNode(1);
+	root->next = new ListNode(2);
+	root->next->next = new ListNode(3);
+	root->next->next->next = new ListNode(4);
+	root->next->next->next->next = new ListNode(5);
+	cout << find_middle(root)->val << endl;
+	getchar();
+	return 0;
+}
+*/
