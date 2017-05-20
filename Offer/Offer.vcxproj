@@ -134,6 +134,12 @@
     <ClCompile Include="面试题2：实现Singleton模式.cpp" />
     <ClCompile Include="面试题30：最小的K个数.cpp" />
     <ClCompile Include="面试题31：连续子数组的最大和.cpp" />
+    <ClCompile Include="面试题32：从1到n整数中1出现的次数.cpp" />
+    <ClCompile Include="面试题33：把数组排成最小的数.cpp" />
+    <ClCompile Include="面试题34：丑数.cpp" />
+    <ClCompile Include="面试题35：第一个只出现一次的字符.cpp" />
+    <ClCompile Include="面试题36：数组中的逆序对.cpp" />
+    <ClCompile Include="面试题37：两个链表的第一个公共结点.cpp" />
     <ClCompile Include="面试题3：二维数组的查找.cpp" />
     <ClCompile Include="面试题4：替换空格.cpp" />
     <ClCompile Include="面试题5：从尾到头打印链表.cpp" />
