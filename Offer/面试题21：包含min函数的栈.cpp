@@ -19,13 +19,19 @@ void push(int value) {
 		min_stack.push(value < min_stack.top() ? value : min_stack.top());
 	}
 }
-void pop() {
+
+void pop() 
+{
 	data_stack.pop();
 	min_stack.pop();
 }
-int top() {
+
+int top() 
+{
 	return data_stack.top();
 }
-int min() {
+
+int min() 
+{
 	return min_stack.top();
 }
