@@ -120,7 +120,7 @@
     <ClCompile Include="面试题17：合并两个排序的链表.cpp" />
     <ClCompile Include="面试题18：树的子结构.cpp" />
     <ClCompile Include="面试题19：二叉树的镜像.cpp" />
-    <ClCompile Include="面试题1_赋值运算符函数.cpp" />
+    <ClCompile Include="面试题1：赋值运算符函数.cpp" />
     <ClCompile Include="面试题20：顺时针打印矩阵.cpp" />
     <ClCompile Include="面试题21：包含min函数的栈.cpp" />
     <ClCompile Include="面试题22：栈的压入、弹出序列.cpp" />

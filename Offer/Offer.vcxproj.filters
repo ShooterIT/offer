@@ -18,9 +18,6 @@
     <ClCompile Include="面试题2：实现Singleton模式.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="面试题1_赋值运算符函数.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="面试题3：二维数组的查找.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -163,6 +160,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="面试题50：树中两个节点的最低公共祖先.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="面试题1：赋值运算符函数.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
