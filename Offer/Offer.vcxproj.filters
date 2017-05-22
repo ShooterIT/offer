@@ -147,5 +147,23 @@
     <ClCompile Include="面试题44：扑克牌的顺子.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="面试题45：圆圈中的最后剩下的数字.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="面试题46：求1+2+...+n.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="面试题47：不用加减乘除做加法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="面试题48：不能被继承的类.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="面试题49：把字符串转换成整数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="面试题50：树中两个节点的最低公共祖先.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
