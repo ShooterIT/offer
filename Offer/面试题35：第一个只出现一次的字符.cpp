@@ -52,3 +52,40 @@ int FirstNotRepeatingChar(string str)
 	}
 	return 0;
 }
+
+//字符流中第一个只出现一次的字符
+class Solution
+{
+public:
+	int idx;
+	int occurrence[256];
+	Solution():idx(1)
+	{
+		for (int i = 0; i < 256; ++i) {
+			occurrence[i] = 0;
+		}
+	}
+	//Insert one char from stringstream
+	void Insert(char ch)
+	{
+		if (occurrence[ch] == 0) {
+			occurrence[ch] = idx++;
+		}else if(occurrence[ch] > 0){
+			occurrence[ch] = -1;
+		}
+	}
+	//return the first appearence once char in current stringstream
+	char FirstAppearingOnce()
+	{
+		char ch = '#';
+		int min = INT_MAX;
+		for (int i = 0; i < 256; ++i) {
+			if (occurrence[i]>0 && occurrence[i] < min) {
+				ch = (char)i;
+				min = occurrence[i];
+			}
+		}
+		return ch;
+	}
+
+};

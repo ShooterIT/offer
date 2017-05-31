@@ -198,5 +198,14 @@
     <ClCompile Include="面试题补11：矩阵中的路径.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="面试题补13：机器人的运动范围.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="面试题补14：队列的最大值.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="面试题补15：股票的最大利润.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
