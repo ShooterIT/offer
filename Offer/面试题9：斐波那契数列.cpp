@@ -1,9 +1,11 @@
 /*
 *
 * 面试题9：斐波那契数列
+* f(n) = f(n-1)+f(n-2)
 *
 */
 
+//递归版本
 int recurse_fibonacci(int n)
 {
 	if (n <= 0) {
@@ -17,19 +19,21 @@ int recurse_fibonacci(int n)
 	}
 }
 
-int Fibonacci(int n) {
+//非递归版本
+int Fibonacci(int n) 
+{
 	if (n <= 0) {
 		return 0;
 	}
 	else if (n <= 2) {
 		return 1;
 	}
-	int last = 1;
-	int last_last = 1;
+	int last = 1;		//上一次的值
+	int last_last = 1;  //上上一次的值
 	int result = last;
 	for (int i = 3; i <= n; i++) {
-		result = last + last_last;
-		last_last = last;
+		result = last + last_last; //上两次的值
+		last_last = last;		   //重置上一次和上上一次
 		last = result;
 	}
 	return result;

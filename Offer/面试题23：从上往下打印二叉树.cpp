@@ -18,6 +18,7 @@ struct TreeNode {
 		val(x), left(nullptr), right(nullptr) {}
 };
 
+//队列，广度优先
 vector<int> PrintFromTopToBottom(TreeNode* root) 
 {
 	vector<int> result;
@@ -27,10 +28,14 @@ vector<int> PrintFromTopToBottom(TreeNode* root)
 	queue<TreeNode*> que;
 	que.push(root);
 	while (!que.empty()) {
+		//头，front
 		TreeNode *node = que.front(); que.pop();
-		if (node != nullptr) {
-			result.push_back(node->val);
+		result.push_back(node->val);
+		//保证对列中没有空指针，不仅减少计算次数，在行打印时能保证正确
+		if (node->left != nullptr) {
 			que.push(node->left);
+		}
+		if (node->right != nullptr) {
 			que.push(node->right);
 		}
 	}

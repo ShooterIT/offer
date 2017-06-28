@@ -16,8 +16,10 @@ ListNode* deleteDuplication(ListNode* pHead)
 		return pHead;
 	ListNode **cur = &pHead;
 	while (*cur) {
+		//有重复
 		if ((*cur)->next && (*cur)->val == (*cur)->next->val) {
 			int val = (*cur)->val; //重复值
+			//删除所有重复值
 			while ((*cur) && (*cur)->val == val) {
 				ListNode * node = *cur;
 				*cur = (*cur)->next;
@@ -25,8 +27,9 @@ ListNode* deleteDuplication(ListNode* pHead)
 				node = nullptr;
 			}
 		}
-		else
+		else { //移动到下一个指针的指针
 			cur = &((*cur)->next);
+		}
 	}
 	return  pHead;
 }

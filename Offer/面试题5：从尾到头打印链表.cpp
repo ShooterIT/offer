@@ -1,6 +1,7 @@
 /*
 *
 * 面试题5：从尾到头打印链表
+* 输入一个链表，从尾到头打印链表每个节点的值。
 *
 */
 
@@ -66,16 +67,37 @@ void remove(ListNode **head, int value)
 }
 
 //从头到尾打印
-vector<int> printListFromTailToHead(ListNode* head) {
+vector<int> printListFromTailToHead(ListNode* head) 
+{
+	//用一个栈进行存，保证逆序
 	stack<int> si;
 	while (head != nullptr) {
 		si.push(head->val);
 		head = head->next;
 	}
+	//输出到vector里
 	vector<int> vi;
 	while (!si.empty()) {
 		vi.push_back(si.top());
 		si.pop();
 	}
 	return vi;
+}
+vector<int> printListFromTailToHead2(ListNode* head)
+{
+	vector<int> vi;
+	printListFromTailToHead3(vi, head);
+	return vi;
+}
+
+//递归打印
+void printListFromTailToHead3(vector<int> &vi, ListNode* head)
+{
+	if (head != nullptr) {
+		//未到尾部就继续
+		if (head->next != nullptr) {
+			printListFromTailToHead3(vi,head->next);
+		}
+		vi.push_back(head->val);
+	}
 }

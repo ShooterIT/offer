@@ -207,5 +207,14 @@
     <ClCompile Include="面试题补15：股票的最大利润.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="面试题补16：剪绳子.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="面试题补17：正则表达式匹配.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="面试题补18：表示数值的字符串.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,6 +1,7 @@
 /*
 *
 * 面试题补8：序列化二叉树
+* 请实现两个函数，分别用来序列化和反序列化二叉树
 *
 */
 
@@ -20,6 +21,7 @@ struct TreeNode
 	}
 };
 
+//先序序列化
 void Serialize_run(TreeNode*root, string &str)
 {
 	if (!root) {
@@ -42,6 +44,7 @@ char* Serialize(TreeNode *root)
 	return result;
 }
 
+//先序反序列化
 TreeNode* Deserialize_run(char* &str)
 {
 	if (*str == '#') {
@@ -63,6 +66,7 @@ TreeNode* Deserialize_run(char* &str)
 
 TreeNode* Deserialize(char *str) 
 {
+	//边界判断
 	if (!str || *str == 0) {
 		return nullptr;
 	}

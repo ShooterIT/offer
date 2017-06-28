@@ -1,15 +1,17 @@
 /*
 *
 * 面试题10：二进制中1的个数
+* 请实现一个函数，输入一个整数
+* 输出该二进制表示中1的个数，如9二进制为1001，则输出为2。
 *
 */
 
 int  NumberOf1(int n) 
 {
 	int count = 0;
-	unsigned int flag = 1;
+	unsigned int flag = 1; //控制整数的长度
 	while (flag) {
-		if (n & flag) {
+		if (n & flag) { //对应的位上是否为1
 			count++;
 		}
 		flag <<= 1;
@@ -22,6 +24,7 @@ int  NumberOf1_2(int n)
 	int count = 0;
 	while (n){
 		count++;
+		//去掉第一个1
 		n = (n - 1) & n;
 	}
 	return count;
@@ -42,5 +45,6 @@ int change(int m, int n)
 
 /*
 * NOTE:
-*	把一个整数减去1之后再和原来的整数做位与运算，得到的结果相当于是把整数的二进制表示中的最右边一个1变成0
+*	把一个整数减去1之后再和原来的整数做位与运算，
+*   得到的结果相当于是把整数的二进制表示中的最右边一个1变成0
 */
