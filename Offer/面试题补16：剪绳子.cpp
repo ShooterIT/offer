@@ -7,7 +7,7 @@
 * f(n) = max(i, f(i) * f(n-i)); 其中  0 < i < n。
 * 
 */
-
+#include <iostream>
 #include <vector>
 #include <functional>
 #include <algorithm>
@@ -40,4 +40,27 @@ int maxProductAfterCutting(int length)
 	delete[] dp;
 
 	return res;
+}
+//牛客网上没有该题目，对应测试如下
+//单元测试
+void test(char *testname, int len, int expect)
+{
+	int result = maxProductAfterCutting(len);
+	if (result == expect) {
+		cout<< testname <<" passed."<<endl;
+	}
+	else { 
+		cout << testname << " failed." << endl;
+	}
+
+}
+
+int main(void)
+{
+	test("length1", 1, 0);
+	test("length2", 2, 1);
+	test("length8", 8, 18);
+	test("length50", 50, 86093442);
+	
+	return 0;
 }
