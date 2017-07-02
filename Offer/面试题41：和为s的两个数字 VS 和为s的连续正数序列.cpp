@@ -52,14 +52,18 @@ vector<int> FindNumbersWithSum(vector<int> array, int sum)
 	if (array.size() > 1) {
 		int i = 0;
 		int j = array.size() - 1;
+		//第一个头，第二个尾
 		while (j > i){
 			int two = array[i] + array[j];
+			//相等输出即可
 			if (two == sum) {
 				result.push_back(array[i]);
 				result.push_back(array[j]);
 				break;
+			//和大，则减少大数
 			}else if(two > sum){
 				j--;
+			//和小，则增加小数
 			}else{
 				i++;
 			}
