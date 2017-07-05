@@ -14,6 +14,7 @@ public:
 	static void delete_intance(Sealed *instance) {
 		delete instance;
 	}
+//析构和构造函数都是私有的
 private:
 	Sealed() {}
 	~Sealed(){}

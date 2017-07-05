@@ -80,10 +80,11 @@ bool get_path(vector<TreeNode *>& vt, TreeNode *root, int v)
 	if (get_path(vt, root->right, v)) {
 		return true;
 	}
+	//该点失败，回溯
 	vt.pop_back();
 	return false;
 }
-//获得最后一个父节点
+//获得最后一个父节点，即两个开始相交后来分开的链表的最后一个交点
 TreeNode *get_last_parent(const vector<TreeNode*> a, const vector<TreeNode*> b) 
 {
 	TreeNode *n = nullptr;
@@ -106,9 +107,12 @@ int find_first_common_node2(TreeNode *root, int a, int b)
 		return -1;
 	}
 	vector<TreeNode *> v1;
+	//获得a路径
 	get_path(v1, root, a);
 	vector<TreeNode *> v2;
+	//获得b路径
 	get_path(v2, root, b);
+	//获得交点
 	TreeNode *n = get_last_parent(v1, v2);
 
 	return n->val;
